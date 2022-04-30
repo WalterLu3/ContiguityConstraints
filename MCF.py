@@ -3,15 +3,13 @@ import gurobipy as gp
 from gurobipy import GRB
 import pickle as pk
 
-boundRate = 0.02
-districtNum = 6
 
 def EuclieanDistance(A,B):
     return ((A[0]-B[0])**2 + (A[1]-B[1])**2)**(1/2)
 
 #print(len(sys.argv))
-if len(sys.argv) < 4:
-    print('Usage: hw3-steiner.py adjFile populationFile positionFile')
+if len(sys.argv) < 6:
+    print('Usage: hw3-steiner.py adjFile populationFile positionFile popBound districtNum')
     quit()
 
 with open(sys.argv[1],"rb") as f:
@@ -20,6 +18,12 @@ with open(sys.argv[2],"rb") as f:
     pop = pk.load(f)
 with open(sys.argv[3],"rb") as f:
     pos = pk.load(f)
+    
+boundRate = float(sys.argv[4])
+districtNum = int(sys.argv[5])
+
+file_name = "{}_bound{}_districtNum{}".format(sys.argv[1],int(boundRate*100),districtNum)
+sys.stdout = open("{}_{}.log".format("MCF",file_name), 'w')
 
 # declare vertices
 vertex = list(pop.keys()) 
@@ -112,7 +116,8 @@ for i in vertex:
             MCFSol[i] = j
 
 
-with open("MCFSol.pd","wb") as f:
+with open("{}_{}.pk".format("MCF",file_name),"wb") as f:
     pk.dump(MCFSol,f)
 #test = [(c,d) for c in a for d in a if c!= d]
 #print(test)
+sys.stdout.close()

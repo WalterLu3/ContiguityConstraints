@@ -5,15 +5,11 @@ from gurobipy import GRB
 import pickle as pk
 
 
-boundRate = 0.02
-districtNum = 6
-
 def EuclieanDistance(A,B):
     return ((A[0]-B[0])**2 + (A[1]-B[1])**2)**(1/2)
-
 #print(len(sys.argv))
-if len(sys.argv) < 4:
-    print('Usage: hw3-steiner.py adjFile populationFile positionFile')
+if len(sys.argv) < 6:
+    print('Usage: hw3-steiner.py adjFile populationFile positionFile popBound districtNum')
     quit()
 
 with open(sys.argv[1],"rb") as f:
@@ -22,6 +18,12 @@ with open(sys.argv[2],"rb") as f:
     pop = pk.load(f)
 with open(sys.argv[3],"rb") as f:
     pos = pk.load(f)
+    
+boundRate = float(sys.argv[4])
+districtNum = int(sys.argv[5])
+
+file_name = "{}_bound{}_districtNum{}".format(sys.argv[1],int(boundRate*100),districtNum)
+sys.stdout = open("{}_{}.log".format("CUT",file_name), 'w')
 
 # declare vertices
 vertex = list(pop.keys()) 
@@ -50,7 +52,7 @@ for a in adj:
 G = nx.Graph()
 G.add_edges_from(arcs)
 
-print(set(G['n_x0_y0']))
+#print(set(G['n_x0_y0']))
 
 vertexNotAdj = {}
 
@@ -185,9 +187,10 @@ for i in vertex:
     for j in vertex:
         if x[i,j].x >0.5:
                 CUTSol[i] = j
+print("cuts : ",m._count)
 
-
-with open("CUTSol.pd","wb") as f:
+sys.stdout.close()
+with open("{}_{}.pk".format("CUT",file_name),"wb") as f:
     pk.dump(CUTSol,f)
 
-print("cuts : ",m._count)
+

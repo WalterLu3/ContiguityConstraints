@@ -3,9 +3,12 @@ import gurobipy as gp
 from gurobipy import GRB
 import pickle as pk
 
+boundRate = 0.25
+districtNum = 8
 
 def EuclieanDistance(A,B):
     return ((A[0]-B[0])**2 + (A[1]-B[1])**2)**(1/2)
+
 
 #print(len(sys.argv))
 if len(sys.argv) < 6:
@@ -23,8 +26,7 @@ boundRate = float(sys.argv[4])
 districtNum = int(sys.argv[5])
 
 file_name = "{}_bound{}_districtNum{}".format(sys.argv[1],int(boundRate*100),districtNum)
-sys.stdout = open("{}_{}.log".format("SHIR",file_name), 'w')
-
+sys.stdout = open("{}_{}.log".format("DIST",file_name), 'w')
 
 # declare vertices
 vertex = list(pop.keys()) 
@@ -50,14 +52,37 @@ for a in adj:
 #for v in vertex:
 #    arcs.append((v,v))
 
-m = gp.Model('SHIR')
+# construct adjacency dictionary
+
+adjDist = {}
+for v in vertex:
+    adjDist[v] = []
+
+for a in arcs:
+    adjDist[a[0]].append(a[1])
+print(adjDist)
+
+closer = {}  # dictionary where first dimension is the choice of center
+
+
+for d in vertex:
+    for a in adjDist.keys():
+        closer[d,a] = []
+        distA = EuclieanDistance(pos[a],pos[d])
+        for b in adjDist[a]:
+            distB = EuclieanDistance(pos[b],pos[d])
+            if distB < distA+0.00001:
+                closer[d,a].append(b)
+    
+
+m = gp.Model('DIST')
 
 #### Hess model ####
 
 # declare assignment binary variable
 x = m.addVars(vertex,vertex, vtype=GRB.BINARY ,name="x")
 
-#objective funciton
+# objective funciton
 obj = gp.quicksum( w[i,j] * x[i,j]  
                     for i in vertex for j in vertex )
 
@@ -76,46 +101,26 @@ m.addConstrs(
 m.addConstrs(
     ( x[i,j] <= x[j,j] for i in vertex for j in vertex), "popUp")
 
+
+# distance model
+
+m.addConstrs(
+    (x[i,j] <= gp.quicksum( x[k,j] for k in closer[j,i]) for i in vertex for j in vertex if i != j )
+        , "distance")
+
+
+
 m.optimize()
 
-m.write("Hess.sol")
 
-hessSol = {}
+
+DISTSol = {}
 for i in vertex:
     for j in vertex:
         if x[i,j].x >0.5:
-            hessSol[i] = j
+            DISTSol[i] = j
 
-#### SHIR MODEL Starts ####
-flow =  m.addVars(vertex,arcs, lb=0.0 ,name="flow")
+with open("{}_{}.pk".format("DIST",file_name),"wb") as f:
+    pk.dump(DISTSol,f)
 
-#add SHIR constraints
-m.addConstrs(
-    (gp.quicksum(flow[j,i,v] for v in vertex if (i,v) in arcs) -
-     gp.quicksum(flow[j,v,i] for v in vertex if (v,i) in arcs)  == -x[i,j] 
-            for i in vertex for j in vertex if i != j)
-            , "SHIRnotCenter")
-
-m.addConstrs(
-    ( gp.quicksum(flow[j,v,i] for v in vertex if (v,i) in arcs) <= (vertexNum-1) * x[i,j]
-        for i in vertex for j in vertex if i != j ), "flowConstr")
-
-m.addConstrs(
-    ( gp.quicksum(flow[j,v,j] for v in vertex if (v,j) in arcs) == 0 for j in vertex), "SHIRCenter")
-
-#a = [1,2,3]
-
-m.optimize()
-m.write("SHIR.sol")
-SHIRSol = {}
-for i in vertex:
-    for j in vertex:
-        if x[i,j].x >0.5:
-            SHIRSol[i] = j
-
-
-with open("{}_{}.pk".format("SHIR",file_name),"wb") as f:
-    pk.dump(SHIRSol,f)
-#test = [(c,d) for c in a for d in a if c!= d]
-#print(test)
 sys.stdout.close()
