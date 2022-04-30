@@ -5,6 +5,7 @@ from gurobipy import GRB
 import pickle as pk
 
 
+CNT = 0
 
 def EuclieanDistance(A,B):
     return ((A[0]-B[0])**2 + (A[1]-B[1])**2)**(1/2)
@@ -165,7 +166,7 @@ def vertexSeparatorCutPreAdd(model):
             
             #print(sumVertex,val[u,c])
             if sumVertex < val[u,c] - 0.000001:
-                m._count = m._count + 1
+                CNT = CNT + 1
                 #print("hey")
                 model.addConstr(gp.quicksum(x[v,c]
                                             for v in S) >= x[u,c])
@@ -174,8 +175,12 @@ m._count = 0
 m._vars = x
 m._vals = None
 m.optimize()
+# add cut beforehand
 for i in range(10):
    vertexSeparatorCutPreAdd(m)
+   if CNT == 0:
+       break
+   CNT = 0
    m.update()
    m.optimize()
 
