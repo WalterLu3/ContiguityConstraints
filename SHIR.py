@@ -76,15 +76,15 @@ m.addConstrs(
 m.addConstrs(
     ( x[i,j] <= x[j,j] for i in vertex for j in vertex), "popUp")
 
-m.optimize()
+#m.optimize()
 
-m.write("Hess.sol")
+# m.write("Hess.sol")
 
-hessSol = {}
-for i in vertex:
-    for j in vertex:
-        if x[i,j].x >0.5:
-            hessSol[i] = j
+# hessSol = {}
+# for i in vertex:
+#     for j in vertex:
+#         if x[i,j].x >0.5:
+#             hessSol[i] = j
 
 #### SHIR MODEL Starts ####
 flow =  m.addVars(vertex,arcs, lb=0.0 ,name="flow")
