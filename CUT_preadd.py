@@ -259,6 +259,7 @@ for v1 in vertex:
         x[v1,v2].vtype = "B" 
 
 m.Params.LazyConstraints = 1
+m.Params.timelimit = 1800.0
 m.optimize(vertexSeparatorCut)
 
         

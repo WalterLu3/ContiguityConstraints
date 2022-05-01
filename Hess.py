@@ -26,6 +26,7 @@ districtNum = int(sys.argv[5])
 
 file_name = "{}_bound{}_districtNum{}".format(sys.argv[1],int(boundRate*100),districtNum)
 sys.stdout = open("{}_{}.log".format("Hess",file_name), 'w')
+
 # declare vertices
 vertex = list(pop.keys()) 
     
@@ -76,7 +77,7 @@ m.addConstrs(
 m.addConstrs(
     ( x[i,j] <= x[j,j] for i in vertex for j in vertex), "popUp")
 
-
+m.Params.timelimit = 1800.0
 
 m.optimize()
 m.write("output.sol")
@@ -87,7 +88,7 @@ for i in vertex:
         if x[i,j].x >0.5:
                 HESSSol[i] = j
 
-sys.stdout.close()
+
 with open("{}_{}.pk".format("Hess",file_name),"wb") as f:
     pk.dump(HESSSol,f)
-
+sys.stdout.close()

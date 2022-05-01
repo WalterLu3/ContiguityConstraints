@@ -107,7 +107,7 @@ m.addConstrs(
 
 
 
-
+m.Params.timelimit = 1800.0
 m.optimize()
 MCFSol = {}
 for i in vertex:

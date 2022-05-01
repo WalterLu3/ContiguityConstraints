@@ -245,6 +245,7 @@ m._vals = None
 m._count = 0
 m.Params.PreCrush = 1
 m.Params.LazyConstraints = 1
+m.Params.timelimit = 1800.0
 m.optimize(vertexSeparatorCut)
 m.write("output.sol")
 

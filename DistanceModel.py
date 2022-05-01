@@ -109,7 +109,7 @@ m.addConstrs(
         , "distance")
 
 
-
+m.Params.timelimit = 1800.0
 m.optimize()
 
 

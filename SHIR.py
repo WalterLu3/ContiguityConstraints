@@ -104,7 +104,7 @@ m.addConstrs(
     ( gp.quicksum(flow[j,v,j] for v in vertex if (v,j) in arcs) == 0 for j in vertex), "SHIRCenter")
 
 #a = [1,2,3]
-
+m.Params.timelimit = 1800.0
 m.optimize()
 m.write("SHIR.sol")
 SHIRSol = {}
