@@ -1,0 +1,92 @@
+Set parameter TokenServer to value "opt-license.discovery.wisc.edu"
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+Optimize a model with 3025 rows, 2916 columns and 11610 nonzeros
+Model fingerprint: 0x402e9334
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e+00, 9e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+00]
+Presolve removed 54 rows and 0 columns
+Presolve time: 0.01s
+Presolved: 2971 rows, 2916 columns, 11610 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.412000e+03   0.000000e+00      0s
+     690    5.3700947e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 690 iterations and 0.06 seconds (0.04 work units)
+Optimal objective  5.370094701e+01
+Set parameter LazyConstraints to value 1
+Set parameter TimeLimit to value 600
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+Optimize a model with 3025 rows, 2916 columns and 11610 nonzeros
+Model fingerprint: 0xc7980385
+Variable types: 0 continuous, 2916 integer (2916 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e+00, 9e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+00]
+Presolve removed 54 rows and 0 columns
+Presolve time: 0.05s
+Presolved: 2971 rows, 2916 columns, 11610 nonzeros
+Variable types: 0 continuous, 2916 integer (2916 binary)
+
+Root relaxation: objective 5.370651e+01, 710 iterations, 0.04 seconds (0.03 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   53.70651    0  113          -   53.70651      -     -    0s
+     0     0   54.27764    0  175          -   54.27764      -     -    0s
+     0     0   54.28484    0  184          -   54.28484      -     -    1s
+     0     0   54.48002    0  186          -   54.48002      -     -    1s
+     0     0   54.61911    0  171          -   54.61911      -     -    1s
+     0     0   54.68565    0  169          -   54.68565      -     -    1s
+     0     0   54.68870    0  169          -   54.68870      -     -    1s
+     0     0   54.73889    0  162          -   54.73889      -     -    1s
+     0     0   54.80511    0  176          -   54.80511      -     -    1s
+     0     0   54.83983    0  167          -   54.83983      -     -    2s
+     0     0   54.85583    0  161          -   54.85583      -     -    2s
+     0     0   54.85824    0  174          -   54.85824      -     -    2s
+     0     0   54.86091    0  169          -   54.86091      -     -    2s
+     0     0   54.86091    0  164          -   54.86091      -     -    2s
+     0     2   54.86091    0  164          -   54.86091      -     -    3s
+  2548  2902   70.28438   60   14          -   55.31331      -  39.1    5s
+H 4586  1970                      58.8634850   55.38141  5.92%  31.1    7s
+H 4656  1814                      58.6274170   55.38145  5.54%  31.1    8s
+  4701  1540   57.55076   18  176   58.62742   55.38145  5.54%  31.0   10s
+  6775  2203   56.33656   33   70   58.62742   55.38145  5.54%  36.6   15s
+H 6801  2116                      58.4558441   55.38145  5.26%  36.6   15s
+H 6804  2041                      57.8634850   55.38145  4.29%  36.7   15s
+H11074  2656                      57.2776985   55.38145  3.31%  39.7   17s
+H16905  3757                      57.1061257   56.16091  1.66%  40.2   19s
+ 19708  3918   56.85462   22   35   57.10613   56.27253  1.46%  40.6   20s
+ 31501  2002     cutoff   26        57.10613   56.68162  0.74%  40.8   26s
+
+Cutting planes:
+  Gomory: 2
+  Lift-and-project: 2
+  Cover: 5
+  MIR: 30
+  StrongCG: 20
+  Flow cover: 12
+  GUB cover: 14
+  Inf proof: 8
+  Zero half: 5
+  RLT: 1
+  Lazy constraints: 2
+
+Explored 34595 nodes (1379040 simplex iterations) in 27.00 seconds (15.76 work units)
+Thread count was 32 (of 80 available processors)
+
+Solution count 6: 57.1061 57.2777 57.8635 ... 58.8635
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.710612566259e+01, best bound 5.710612566259e+01, gap 0.0000%
+
+User-callback calls 74982, time in user-callback 4.64 sec
+cuts :  0

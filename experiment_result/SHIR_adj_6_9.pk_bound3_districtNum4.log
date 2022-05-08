@@ -1,0 +1,32 @@
+Set parameter TokenServer to value "opt-license.discovery.wisc.edu"
+Set parameter TimeLimit to value 1800
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+Optimize a model with 8803 rows, 12960 columns and 47094 nonzeros
+Model fingerprint: 0xd0cb8be8
+Variable types: 10044 continuous, 2916 integer (2916 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+03]
+  Objective range  [1e+00, 9e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Presolve removed 108 rows and 186 columns
+Presolve time: 0.20s
+Presolved: 8695 rows, 12774 columns, 46714 nonzeros
+Variable types: 9858 continuous, 2916 integer (2916 binary)
+
+Root relaxation: objective 7.746023e+01, 1154 iterations, 0.08 seconds (0.04 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   77.46023    0    2          -   77.46023      -     -    0s
+H    0     0                      77.4602327   77.46023  0.00%     -    0s
+
+Explored 1 nodes (1154 simplex iterations) in 0.50 seconds (0.25 work units)
+Thread count was 32 (of 80 available processors)
+
+Solution count 1: 77.4602 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.746023272797e+01, best bound 7.746023272797e+01, gap 0.0000%

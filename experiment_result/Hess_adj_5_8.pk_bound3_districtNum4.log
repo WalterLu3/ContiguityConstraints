@@ -1,0 +1,51 @@
+Set parameter TokenServer to value "opt-license.discovery.wisc.edu"
+Set parameter TimeLimit to value 1800
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+Optimize a model with 1681 rows, 1600 columns and 6360 nonzeros
+Model fingerprint: 0x4391cda8
+Variable types: 0 continuous, 1600 integer (1600 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Found heuristic solution: objective 144.5853992
+Presolve removed 40 rows and 0 columns
+Presolve time: 0.03s
+Presolved: 1641 rows, 1600 columns, 6360 nonzeros
+Variable types: 0 continuous, 1600 integer (1600 binary)
+Found heuristic solution: objective 137.5264737
+
+Root relaxation: objective 5.043681e+01, 725 iterations, 0.03 seconds (0.02 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   50.43681    0   55  137.52647   50.43681  63.3%     -    0s
+H    0     0                      53.8591066   50.43681  6.35%     -    0s
+H    0     0                      52.1509026   50.43681  3.29%     -    0s
+     0     0   51.08854    0  133   52.15090   51.08854  2.04%     -    0s
+     0     0   51.08854    0   50   52.15090   51.08854  2.04%     -    0s
+     0     0   51.08854    0   89   52.15090   51.08854  2.04%     -    0s
+     0     0   51.21564    0  124   52.15090   51.21564  1.79%     -    0s
+     0     0   51.45302    0  148   52.15090   51.45302  1.34%     -    0s
+H    0     0                      51.7273939   51.45302  0.53%     -    0s
+     0     0   51.45302    0  146   51.72739   51.45302  0.53%     -    0s
+     0     0   51.45302    0  147   51.72739   51.45302  0.53%     -    0s
+
+Cutting planes:
+  Gomory: 4
+  Clique: 13
+  MIR: 3
+  StrongCG: 3
+  GUB cover: 3
+  RLT: 5
+
+Explored 1 nodes (1740 simplex iterations) in 0.50 seconds (0.19 work units)
+Thread count was 32 (of 80 available processors)
+
+Solution count 6: 51.7274 52.1509 53.8591 ... 144.585
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.172739385852e+01, best bound 5.172739385852e+01, gap 0.0000%

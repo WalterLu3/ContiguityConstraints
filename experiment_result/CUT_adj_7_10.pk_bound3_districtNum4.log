@@ -1,0 +1,44 @@
+Set parameter TokenServer to value "opt-license.discovery.wisc.edu"
+Set parameter LazyConstraints to value 1
+Set parameter TimeLimit to value 1800
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+Optimize a model with 5041 rows, 4900 columns and 19530 nonzeros
+Model fingerprint: 0x3b1254b8
+Variable types: 0 continuous, 4900 integer (4900 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Presolve removed 70 rows and 0 columns
+Presolve time: 0.08s
+Presolved: 4971 rows, 4900 columns, 19530 nonzeros
+Variable types: 0 continuous, 4900 integer (4900 binary)
+
+Root relaxation: objective 1.147737e+02, 1762 iterations, 0.11 seconds (0.07 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  114.77366    0   42          -  114.77366      -     -    1s
+H    0     0                     163.3779529  114.77366  29.7%     -    1s
+H    0     0                     115.5886947  114.77366  0.71%     -    2s
+     0     0  115.01969    0  118  115.58869  115.01969  0.49%     -    2s
+     0     0  115.01969    0   20  115.58869  115.01969  0.49%     -    2s
+H    0     0                     115.4396092  115.01969  0.36%     -    2s
+     0     0  115.14655    0   49  115.43961  115.14655  0.25%     -    2s
+     0     0  115.14857    0   51  115.43961  115.14857  0.25%     -    2s
+     0     0  115.33124    0   22  115.43961  115.33124  0.09%     -    2s
+     0     0     cutoff    0       115.43961  115.43961  0.00%     -    2s
+
+Explored 1 nodes (2247 simplex iterations) in 2.91 seconds (0.25 work units)
+Thread count was 32 (of 80 available processors)
+
+Solution count 3: 115.44 115.589 163.378 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.154396091977e+02, best bound 1.154396091977e+02, gap 0.0000%
+
+User-callback calls 288, time in user-callback 2.35 sec
+cuts :  252

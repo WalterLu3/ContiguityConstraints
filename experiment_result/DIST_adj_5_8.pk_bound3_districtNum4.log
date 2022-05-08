@@ -1,0 +1,52 @@
+{'n_x0_y0': ['n_x1_y0', 'n_x0_y1'], 'n_x0_y1': ['n_x0_y0', 'n_x1_y1', 'n_x0_y2'], 'n_x0_y2': ['n_x0_y1', 'n_x1_y2', 'n_x0_y3'], 'n_x0_y3': ['n_x0_y2', 'n_x1_y3', 'n_x0_y4'], 'n_x0_y4': ['n_x0_y3', 'n_x1_y4', 'n_x0_y5'], 'n_x0_y5': ['n_x0_y4', 'n_x1_y5', 'n_x0_y6'], 'n_x0_y6': ['n_x0_y5', 'n_x1_y6', 'n_x0_y7'], 'n_x0_y7': ['n_x0_y6', 'n_x1_y7'], 'n_x1_y0': ['n_x0_y0', 'n_x2_y0', 'n_x1_y1'], 'n_x1_y1': ['n_x0_y1', 'n_x1_y0', 'n_x2_y1', 'n_x1_y2'], 'n_x1_y2': ['n_x0_y2', 'n_x1_y1', 'n_x2_y2', 'n_x1_y3'], 'n_x1_y3': ['n_x0_y3', 'n_x1_y2', 'n_x2_y3', 'n_x1_y4'], 'n_x1_y4': ['n_x0_y4', 'n_x1_y3', 'n_x2_y4', 'n_x1_y5'], 'n_x1_y5': ['n_x0_y5', 'n_x1_y4', 'n_x2_y5', 'n_x1_y6'], 'n_x1_y6': ['n_x0_y6', 'n_x1_y5', 'n_x2_y6', 'n_x1_y7'], 'n_x1_y7': ['n_x0_y7', 'n_x1_y6', 'n_x2_y7'], 'n_x2_y0': ['n_x1_y0', 'n_x3_y0', 'n_x2_y1'], 'n_x2_y1': ['n_x1_y1', 'n_x2_y0', 'n_x3_y1', 'n_x2_y2'], 'n_x2_y2': ['n_x1_y2', 'n_x2_y1', 'n_x3_y2', 'n_x2_y3'], 'n_x2_y3': ['n_x1_y3', 'n_x2_y2', 'n_x3_y3', 'n_x2_y4'], 'n_x2_y4': ['n_x1_y4', 'n_x2_y3', 'n_x3_y4', 'n_x2_y5'], 'n_x2_y5': ['n_x1_y5', 'n_x2_y4', 'n_x3_y5', 'n_x2_y6'], 'n_x2_y6': ['n_x1_y6', 'n_x2_y5', 'n_x3_y6', 'n_x2_y7'], 'n_x2_y7': ['n_x1_y7', 'n_x2_y6', 'n_x3_y7'], 'n_x3_y0': ['n_x2_y0', 'n_x4_y0', 'n_x3_y1'], 'n_x3_y1': ['n_x2_y1', 'n_x3_y0', 'n_x4_y1', 'n_x3_y2'], 'n_x3_y2': ['n_x2_y2', 'n_x3_y1', 'n_x4_y2', 'n_x3_y3'], 'n_x3_y3': ['n_x2_y3', 'n_x3_y2', 'n_x4_y3', 'n_x3_y4'], 'n_x3_y4': ['n_x2_y4', 'n_x3_y3', 'n_x4_y4', 'n_x3_y5'], 'n_x3_y5': ['n_x2_y5', 'n_x3_y4', 'n_x4_y5', 'n_x3_y6'], 'n_x3_y6': ['n_x2_y6', 'n_x3_y5', 'n_x4_y6', 'n_x3_y7'], 'n_x3_y7': ['n_x2_y7', 'n_x3_y6', 'n_x4_y7'], 'n_x4_y0': ['n_x3_y0', 'n_x4_y1'], 'n_x4_y1': ['n_x3_y1', 'n_x4_y0', 'n_x4_y2'], 'n_x4_y2': ['n_x3_y2', 'n_x4_y1', 'n_x4_y3'], 'n_x4_y3': ['n_x3_y3', 'n_x4_y2', 'n_x4_y4'], 'n_x4_y4': ['n_x3_y4', 'n_x4_y3', 'n_x4_y5'], 'n_x4_y5': ['n_x3_y5', 'n_x4_y4', 'n_x4_y6'], 'n_x4_y6': ['n_x3_y6', 'n_x4_y5', 'n_x4_y7'], 'n_x4_y7': ['n_x3_y7', 'n_x4_y6']}
+Set parameter TokenServer to value "opt-license.discovery.wisc.edu"
+Set parameter TimeLimit to value 1800
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+Optimize a model with 3241 rows, 1600 columns and 10600 nonzeros
+Model fingerprint: 0x7a167ebd
+Variable types: 0 continuous, 1600 integer (1600 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [1e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Presolve removed 481 rows and 1 columns
+Presolve time: 0.05s
+Presolved: 2760 rows, 1599 columns, 9714 nonzeros
+Variable types: 0 continuous, 1599 integer (1599 binary)
+Found heuristic solution: objective 90.7268498
+
+Root relaxation: objective 5.043681e+01, 792 iterations, 0.04 seconds (0.03 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   50.43681    0   55   90.72685   50.43681  44.4%     -    0s
+H    0     0                      54.5492483   50.43681  7.54%     -    0s
+H    0     0                      52.8011842   50.43681  4.48%     -    0s
+H    0     0                      52.1509026   50.43681  3.29%     -    0s
+     0     0   51.02337    0  124   52.15090   51.02337  2.16%     -    0s
+     0     0   51.02337    0   46   52.15090   51.02337  2.16%     -    0s
+     0     0   51.10384    0   43   52.15090   51.10384  2.01%     -    0s
+     0     0   51.20690    0  106   52.15090   51.20690  1.81%     -    0s
+     0     0   51.21311    0  107   52.15090   51.21311  1.80%     -    0s
+     0     0   51.34037    0  169   52.15090   51.34037  1.55%     -    0s
+     0     0   51.34753    0  170   52.15090   51.34753  1.54%     -    0s
+H    0     0                      51.7273939   51.34753  0.73%     -    0s
+
+Cutting planes:
+  Gomory: 4
+  Clique: 1
+  MIR: 3
+  StrongCG: 1
+  GUB cover: 4
+  RLT: 2
+
+Explored 1 nodes (1883 simplex iterations) in 0.63 seconds (0.22 work units)
+Thread count was 32 (of 80 available processors)
+
+Solution count 5: 51.7274 52.1509 52.8012 ... 90.7268
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.172739385852e+01, best bound 5.172739385852e+01, gap 0.0000%

@@ -1,0 +1,45 @@
+Set parameter TokenServer to value "opt-license.discovery.wisc.edu"
+Set parameter TimeLimit to value 1800
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+Optimize a model with 5041 rows, 4900 columns and 19530 nonzeros
+Model fingerprint: 0x3b1254b8
+Variable types: 0 continuous, 4900 integer (4900 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Found heuristic solution: objective 353.3608693
+Presolve removed 70 rows and 0 columns
+Presolve time: 0.09s
+Presolved: 4971 rows, 4900 columns, 19530 nonzeros
+Variable types: 0 continuous, 4900 integer (4900 binary)
+Found heuristic solution: objective 327.5247289
+
+Root relaxation: objective 1.147737e+02, 1782 iterations, 0.10 seconds (0.07 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  114.77366    0   42  327.52473  114.77366  65.0%     -    0s
+H    0     0                     115.5886947  114.77366  0.71%     -    0s
+H    0     0                     115.4396092  114.77366  0.58%     -    0s
+     0     0  114.91508    0  168  115.43961  114.91508  0.45%     -    0s
+     0     0  114.91508    0   17  115.43961  114.91508  0.45%     -    0s
+     0     0  115.43961    0   40  115.43961  115.43961  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 5
+  Clique: 1
+  MIR: 1
+  StrongCG: 1
+  GUB cover: 3
+
+Explored 1 nodes (2132 simplex iterations) in 0.60 seconds (0.24 work units)
+Thread count was 32 (of 80 available processors)
+
+Solution count 5: 115.44 115.44 115.589 ... 353.361
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.154396091977e+02, best bound 1.154396091977e+02, gap 0.0000%

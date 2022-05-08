@@ -1,0 +1,50 @@
+{'n_x0_y0': ['n_x1_y0', 'n_x0_y1'], 'n_x0_y1': ['n_x0_y0', 'n_x1_y1', 'n_x0_y2'], 'n_x0_y2': ['n_x0_y1', 'n_x1_y2', 'n_x0_y3'], 'n_x0_y3': ['n_x0_y2', 'n_x1_y3', 'n_x0_y4'], 'n_x0_y4': ['n_x0_y3', 'n_x1_y4', 'n_x0_y5'], 'n_x0_y5': ['n_x0_y4', 'n_x1_y5', 'n_x0_y6'], 'n_x0_y6': ['n_x0_y5', 'n_x1_y6', 'n_x0_y7'], 'n_x0_y7': ['n_x0_y6', 'n_x1_y7', 'n_x0_y8'], 'n_x0_y8': ['n_x0_y7', 'n_x1_y8', 'n_x0_y9'], 'n_x0_y9': ['n_x0_y8', 'n_x1_y9'], 'n_x1_y0': ['n_x0_y0', 'n_x2_y0', 'n_x1_y1'], 'n_x1_y1': ['n_x0_y1', 'n_x1_y0', 'n_x2_y1', 'n_x1_y2'], 'n_x1_y2': ['n_x0_y2', 'n_x1_y1', 'n_x2_y2', 'n_x1_y3'], 'n_x1_y3': ['n_x0_y3', 'n_x1_y2', 'n_x2_y3', 'n_x1_y4'], 'n_x1_y4': ['n_x0_y4', 'n_x1_y3', 'n_x2_y4', 'n_x1_y5'], 'n_x1_y5': ['n_x0_y5', 'n_x1_y4', 'n_x2_y5', 'n_x1_y6'], 'n_x1_y6': ['n_x0_y6', 'n_x1_y5', 'n_x2_y6', 'n_x1_y7'], 'n_x1_y7': ['n_x0_y7', 'n_x1_y6', 'n_x2_y7', 'n_x1_y8'], 'n_x1_y8': ['n_x0_y8', 'n_x1_y7', 'n_x2_y8', 'n_x1_y9'], 'n_x1_y9': ['n_x0_y9', 'n_x1_y8', 'n_x2_y9'], 'n_x2_y0': ['n_x1_y0', 'n_x3_y0', 'n_x2_y1'], 'n_x2_y1': ['n_x1_y1', 'n_x2_y0', 'n_x3_y1', 'n_x2_y2'], 'n_x2_y2': ['n_x1_y2', 'n_x2_y1', 'n_x3_y2', 'n_x2_y3'], 'n_x2_y3': ['n_x1_y3', 'n_x2_y2', 'n_x3_y3', 'n_x2_y4'], 'n_x2_y4': ['n_x1_y4', 'n_x2_y3', 'n_x3_y4', 'n_x2_y5'], 'n_x2_y5': ['n_x1_y5', 'n_x2_y4', 'n_x3_y5', 'n_x2_y6'], 'n_x2_y6': ['n_x1_y6', 'n_x2_y5', 'n_x3_y6', 'n_x2_y7'], 'n_x2_y7': ['n_x1_y7', 'n_x2_y6', 'n_x3_y7', 'n_x2_y8'], 'n_x2_y8': ['n_x1_y8', 'n_x2_y7', 'n_x3_y8', 'n_x2_y9'], 'n_x2_y9': ['n_x1_y9', 'n_x2_y8', 'n_x3_y9'], 'n_x3_y0': ['n_x2_y0', 'n_x4_y0', 'n_x3_y1'], 'n_x3_y1': ['n_x2_y1', 'n_x3_y0', 'n_x4_y1', 'n_x3_y2'], 'n_x3_y2': ['n_x2_y2', 'n_x3_y1', 'n_x4_y2', 'n_x3_y3'], 'n_x3_y3': ['n_x2_y3', 'n_x3_y2', 'n_x4_y3', 'n_x3_y4'], 'n_x3_y4': ['n_x2_y4', 'n_x3_y3', 'n_x4_y4', 'n_x3_y5'], 'n_x3_y5': ['n_x2_y5', 'n_x3_y4', 'n_x4_y5', 'n_x3_y6'], 'n_x3_y6': ['n_x2_y6', 'n_x3_y5', 'n_x4_y6', 'n_x3_y7'], 'n_x3_y7': ['n_x2_y7', 'n_x3_y6', 'n_x4_y7', 'n_x3_y8'], 'n_x3_y8': ['n_x2_y8', 'n_x3_y7', 'n_x4_y8', 'n_x3_y9'], 'n_x3_y9': ['n_x2_y9', 'n_x3_y8', 'n_x4_y9'], 'n_x4_y0': ['n_x3_y0', 'n_x5_y0', 'n_x4_y1'], 'n_x4_y1': ['n_x3_y1', 'n_x4_y0', 'n_x5_y1', 'n_x4_y2'], 'n_x4_y2': ['n_x3_y2', 'n_x4_y1', 'n_x5_y2', 'n_x4_y3'], 'n_x4_y3': ['n_x3_y3', 'n_x4_y2', 'n_x5_y3', 'n_x4_y4'], 'n_x4_y4': ['n_x3_y4', 'n_x4_y3', 'n_x5_y4', 'n_x4_y5'], 'n_x4_y5': ['n_x3_y5', 'n_x4_y4', 'n_x5_y5', 'n_x4_y6'], 'n_x4_y6': ['n_x3_y6', 'n_x4_y5', 'n_x5_y6', 'n_x4_y7'], 'n_x4_y7': ['n_x3_y7', 'n_x4_y6', 'n_x5_y7', 'n_x4_y8'], 'n_x4_y8': ['n_x3_y8', 'n_x4_y7', 'n_x5_y8', 'n_x4_y9'], 'n_x4_y9': ['n_x3_y9', 'n_x4_y8', 'n_x5_y9'], 'n_x5_y0': ['n_x4_y0', 'n_x6_y0', 'n_x5_y1'], 'n_x5_y1': ['n_x4_y1', 'n_x5_y0', 'n_x6_y1', 'n_x5_y2'], 'n_x5_y2': ['n_x4_y2', 'n_x5_y1', 'n_x6_y2', 'n_x5_y3'], 'n_x5_y3': ['n_x4_y3', 'n_x5_y2', 'n_x6_y3', 'n_x5_y4'], 'n_x5_y4': ['n_x4_y4', 'n_x5_y3', 'n_x6_y4', 'n_x5_y5'], 'n_x5_y5': ['n_x4_y5', 'n_x5_y4', 'n_x6_y5', 'n_x5_y6'], 'n_x5_y6': ['n_x4_y6', 'n_x5_y5', 'n_x6_y6', 'n_x5_y7'], 'n_x5_y7': ['n_x4_y7', 'n_x5_y6', 'n_x6_y7', 'n_x5_y8'], 'n_x5_y8': ['n_x4_y8', 'n_x5_y7', 'n_x6_y8', 'n_x5_y9'], 'n_x5_y9': ['n_x4_y9', 'n_x5_y8', 'n_x6_y9'], 'n_x6_y0': ['n_x5_y0', 'n_x6_y1'], 'n_x6_y1': ['n_x5_y1', 'n_x6_y0', 'n_x6_y2'], 'n_x6_y2': ['n_x5_y2', 'n_x6_y1', 'n_x6_y3'], 'n_x6_y3': ['n_x5_y3', 'n_x6_y2', 'n_x6_y4'], 'n_x6_y4': ['n_x5_y4', 'n_x6_y3', 'n_x6_y5'], 'n_x6_y5': ['n_x5_y5', 'n_x6_y4', 'n_x6_y6'], 'n_x6_y6': ['n_x5_y6', 'n_x6_y5', 'n_x6_y7'], 'n_x6_y7': ['n_x5_y7', 'n_x6_y6', 'n_x6_y8'], 'n_x6_y8': ['n_x5_y8', 'n_x6_y7', 'n_x6_y9'], 'n_x6_y9': ['n_x5_y9', 'n_x6_y8']}
+Set parameter TokenServer to value "opt-license.discovery.wisc.edu"
+Set parameter TimeLimit to value 600
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+Optimize a model with 9871 rows, 4900 columns and 32970 nonzeros
+Model fingerprint: 0x3652a145
+Variable types: 0 continuous, 4900 integer (4900 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+03]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 6e+00]
+Presolve removed 1121 rows and 1 columns
+Presolve time: 0.17s
+Presolved: 8750 rows, 4899 columns, 30864 nonzeros
+Variable types: 0 continuous, 4899 integer (4899 binary)
+
+Root relaxation: objective 9.205411e+01, 1389 iterations, 0.12 seconds (0.08 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   92.05411    0  176          -   92.05411      -     -    0s
+     0     0   92.21066    0  202          -   92.21066      -     -    1s
+     0     0   92.21418    0  202          -   92.21418      -     -    1s
+     0     0   92.29547    0  216          -   92.29547      -     -    1s
+H    0     0                     102.1012191   92.30029  9.60%     -    1s
+H    0     0                      99.2214422   92.30029  6.98%     -    1s
+     0     0   92.30050    0  217   99.22144   92.30050  6.98%     -    1s
+     0     0   92.37837    0  207   99.22144   92.37837  6.90%     -    1s
+     0     0   92.37837    0  176   99.22144   92.37837  6.90%     -    2s
+H    0     0                      98.7001509   92.37837  6.41%     -    2s
+H    0     0                      94.2280150   92.37837  1.96%     -    2s
+H    0     0                      92.5378732   92.37837  0.17%     -    2s
+     0     0   92.37837    0  132   92.53787   92.37837  0.17%     -    2s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 3
+  GUB cover: 3
+  Zero half: 5
+
+Explored 1 nodes (3538 simplex iterations) in 2.73 seconds (0.97 work units)
+Thread count was 32 (of 80 available processors)
+
+Solution count 5: 92.5379 94.228 98.7002 ... 102.101
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.253787324945e+01, best bound 9.253787324945e+01, gap 0.0000%

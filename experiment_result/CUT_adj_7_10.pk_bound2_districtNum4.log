@@ -1,0 +1,52 @@
+Set parameter TokenServer to value "opt-license.discovery.wisc.edu"
+Set parameter LazyConstraints to value 1
+Set parameter TimeLimit to value 600
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+Optimize a model with 5041 rows, 4900 columns and 19530 nonzeros
+Model fingerprint: 0x1a9aac11
+Variable types: 0 continuous, 4900 integer (4900 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+03]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Presolve removed 70 rows and 0 columns
+Presolve time: 0.08s
+Presolved: 4971 rows, 4900 columns, 19530 nonzeros
+Variable types: 0 continuous, 4900 integer (4900 binary)
+
+Root relaxation: objective 1.148896e+02, 1791 iterations, 0.11 seconds (0.08 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  114.88961    0   44          -  114.88961      -     -    1s
+H    0     0                     165.4611045  114.88961  30.6%     -    1s
+H    0     0                     115.5886947  114.88961  0.60%     -    2s
+     0     0  114.90497    0   85  115.58869  114.90497  0.59%     -    2s
+     0     0  114.90497    0   19  115.58869  114.90497  0.59%     -    2s
+H    0     0                     115.4396092  114.90497  0.46%     -    2s
+     0     0  115.09228    0   36  115.43961  115.09228  0.30%     -    2s
+     0     0  115.09228    0   15  115.43961  115.09228  0.30%     -    2s
+     0     0  115.18057    0    6  115.43961  115.18057  0.22%     -    2s
+     0     0  115.23900    0    6  115.43961  115.23900  0.17%     -    2s
+     0     0     cutoff    0       115.43961  115.43961  0.00%     -    2s
+
+Cutting planes:
+  Gomory: 3
+  Cover: 1
+  MIR: 1
+  Zero half: 1
+  RLT: 1
+
+Explored 1 nodes (2086 simplex iterations) in 2.81 seconds (0.26 work units)
+Thread count was 32 (of 80 available processors)
+
+Solution count 3: 115.44 115.589 165.461 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.154396091977e+02, best bound 1.154396091977e+02, gap 0.0000%
+
+User-callback calls 293, time in user-callback 2.21 sec
+cuts :  246

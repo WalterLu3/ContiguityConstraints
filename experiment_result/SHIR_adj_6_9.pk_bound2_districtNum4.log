@@ -1,0 +1,36 @@
+Set parameter TokenServer to value "opt-license.discovery.wisc.edu"
+Set parameter TimeLimit to value 600
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (linux64)
+Thread count: 40 physical cores, 80 logical processors, using up to 32 threads
+Optimize a model with 8803 rows, 12960 columns and 47094 nonzeros
+Model fingerprint: 0x637529f2
+Variable types: 10044 continuous, 2916 integer (2916 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+03]
+  Objective range  [1e+00, 9e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Presolve removed 108 rows and 186 columns
+Presolve time: 0.21s
+Presolved: 8695 rows, 12774 columns, 46714 nonzeros
+Variable types: 9858 continuous, 2916 integer (2916 binary)
+
+Root relaxation: objective 7.746023e+01, 1199 iterations, 0.09 seconds (0.04 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   77.46023    0   31          -   77.46023      -     -    0s
+H    0     0                      79.0525919   77.46023  2.01%     -    0s
+H    0     0                      78.3864424   77.46023  1.18%     -    0s
+H    0     0                      78.0525919   77.46023  0.76%     -    0s
+     0     0   77.46023    0   34   78.05259   77.46023  0.76%     -    0s
+H    0     0                      78.0460192   77.46023  0.75%     -    0s
+
+Explored 1 nodes (1367 simplex iterations) in 1.00 seconds (0.42 work units)
+Thread count was 32 (of 80 available processors)
+
+Solution count 4: 78.046 78.0526 78.3864 79.0526 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.804601916559e+01, best bound 7.804601916559e+01, gap 0.0000%
