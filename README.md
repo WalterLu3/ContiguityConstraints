@@ -1,4 +1,4 @@
-# CS728_project
+# Formulating Contiguity Constraints in Integer Programming Models
 
 The usage of all .py files are the same. It takes 5 arguments:
 
