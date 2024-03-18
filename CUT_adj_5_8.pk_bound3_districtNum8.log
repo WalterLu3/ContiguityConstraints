@@ -1,0 +1,81 @@
+Set parameter Username
+Academic license - for non-commercial use only - expires 2022-06-20
+Set parameter LazyConstraints to value 1
+Set parameter TimeLimit to value 1800
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (mac64[x86])
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 1681 rows, 1600 columns and 6360 nonzeros
+Model fingerprint: 0x0f4d7552
+Variable types: 0 continuous, 1600 integer (1600 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 7e+02]
+  Objective range  [1e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+00]
+Presolve removed 156 rows and 0 columns
+Presolve time: 0.05s
+Presolved: 1525 rows, 1600 columns, 6710 nonzeros
+Variable types: 0 continuous, 1600 integer (1600 binary)
+
+Root relaxation: objective 3.467966e+01, 438 iterations, 0.02 seconds (0.02 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   34.67966    0  133          -   34.67966      -     -    0s
+     0     0   35.07626    0  153          -   35.07626      -     -    0s
+     0     0   35.36797    0  131          -   35.36797      -     -    1s
+     0     0   35.64201    0  130          -   35.64201      -     -    1s
+     0     0   35.73925    0  160          -   35.73925      -     -    1s
+     0     0   35.95810    0  147          -   35.95810      -     -    1s
+     0     0   36.00610    0  158          -   36.00610      -     -    1s
+     0     0   36.01154    0  144          -   36.01154      -     -    1s
+     0     0   36.01154    0  139          -   36.01154      -     -    1s
+     0     0   36.03402    0  151          -   36.03402      -     -    1s
+     0     0   36.03600    0  139          -   36.03600      -     -    1s
+     0     0   36.07609    0  152          -   36.07609      -     -    1s
+     0     0   36.08506    0  139          -   36.08506      -     -    1s
+     0     0   36.08587    0  140          -   36.08587      -     -    1s
+     0     0   36.08602    0  155          -   36.08602      -     -    1s
+     0     0   36.09423    0  140          -   36.09423      -     -    1s
+     0     0   36.09463    0  140          -   36.09463      -     -    1s
+     0     0   36.10253    0  146          -   36.10253      -     -    1s
+     0     0   36.10253    0  141          -   36.10253      -     -    1s
+H    0     0                      38.5497765   36.10253  6.35%     -    1s
+     0     0   36.10381    0  133   38.54978   36.10381  6.34%     -    2s
+     0     0   36.10381    0  132   38.54978   36.10381  6.34%     -    2s
+     0     0   36.10381    0  151   38.54978   36.10381  6.34%     -    2s
+     0     0   36.10381    0  142   38.54978   36.10381  6.34%     -    2s
+     0     0   36.10381    0  140   38.54978   36.10381  6.34%     -    2s
+     0     0   36.12255    0  142   38.54978   36.12255  6.30%     -    2s
+     0     0   36.12361    0  143   38.54978   36.12361  6.29%     -    2s
+     0     0   36.15203    0  147   38.54978   36.15203  6.22%     -    2s
+     0     0   36.15242    0  148   38.54978   36.15242  6.22%     -    2s
+     0     0   36.15242    0  148   38.54978   36.15242  6.22%     -    2s
+     0     2   36.15242    0  148   38.54978   36.15242  6.22%     -    2s
+   744   465   37.30569   19  141   38.54978   36.41833  5.53%  34.2    5s
+H  805   486                      38.3137085   36.42154  4.94%  36.6    8s
+  1094   541   36.88302   26   71   38.31371   36.45653  4.85%  41.2   10s
+H 1346   525                      37.8994949   36.63170  3.35%  41.4   11s
+
+Cutting planes:
+  Lift-and-project: 13
+  Cover: 1
+  MIR: 40
+  StrongCG: 38
+  Flow cover: 25
+  GUB cover: 13
+  Inf proof: 1
+  Zero half: 8
+  Lazy constraints: 2
+
+Explored 2466 nodes (104013 simplex iterations) in 12.71 seconds (5.71 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: 37.8995 38.3137 38.5498 
+
+Solve interrupted
+Best objective 3.789949493661e+01, best bound 3.707687738292e+01, gap 2.1705%
+
+User-callback calls 7678, time in user-callback 1.05 sec
+cuts :  175
