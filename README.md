@@ -25,11 +25,11 @@ The way to run it is
 
 1. Method: one of the method described in the last section (case sensitive)
 2. Example name:
-    a. 5_8: 5 times 8 retangular
-    b. 6_9: 6 times 9 retangular
-    c. 7_10: 7 times 10 retangular
-    d. wisconsin: wisconsin county data (72 connties)
-3. Population tolerace : a double. For example, 0.02 means the population is less than (1+0.02) times average population and more than (1-0.02) times average population
+    1. 5_8: 5 times 8 retangular
+    2. 6_9: 6 times 9 retangular
+    3. 7_10: 7 times 10 retangular
+    4. wisconsin: wisconsin county data (72 connties)
+3. Population tolerance : a double. For example, 0.02 means the population is less than (1+0.02) times average population and more than (1-0.02) times average population
 4. district number: integer. number of districts to create.
 
 Output:
@@ -40,6 +40,7 @@ Output:
 ## Use of this repo.
 With the `.pk` file, it is easy for user to visualize the district. For more flexible use, user can do something like 
 `cd models`
+
 `python HESS.py {adjfile} {populationfile} {positionfile} {tolerance} {districtNum}`
 
 without needing to only use the example in the `data/` folder. But users need to make sure that the format of data files satisfies the ones in the `data/` folder, which is trivial.
