@@ -5,17 +5,17 @@ This repo is dedicated to implementing different variations of contiguity constr
 ## What is contained in this repo?
 
 The most important repos are:
-    1. data repo : contains data for political districting (3 synthetic instances and 1 Wisconsin instance).
-        a. Population data
-        b. Adjacency data
-        c. Positional data.
-    2. models : constains models for implementing contiguity constraints
-        a. HESS: maximizing compactness and allowing possible discontiguity
-        b. SHIR: For each district, we can formulate a set of Steiner Tree constraints to guarantee contiguity.
-        c. MCF: Instead of using |T| − 1 as big-M constraint in the Steiner Tree formulation of SHIR: we use multi-commodity formulation to obtain a tighter formulation.
-        d. DistanceModel: Using the distance of adjacent pair of units to formulate contiguity constraint.
-        e. CUT: It uses the idea of a-b separator and add cutting planes to guarantee contiguity.
-        f. CUT_preadd, CUT_all: Variations of CUT with preadded cutting plane.
+1. data repo : contains data for political districting (3 synthetic instances and 1 Wisconsin instance).
+    1. Population data
+    2. Adjacency data
+    3. Positional data.
+2. models : constains models for implementing contiguity constraints
+    1. HESS: maximizing compactness and allowing possible discontiguity
+    2. SHIR: For each district, we can formulate a set of Steiner Tree constraints to guarantee contiguity.
+    3. MCF: Instead of using |T| − 1 as big-M constraint in the Steiner Tree formulation of SHIR: we use multi-commodity formulation to obtain a tighter formulation.
+    4. DistanceModel: Using the distance of adjacent pair of units to formulate contiguity constraint.
+    5. CUT: It uses the idea of a-b separator and add cutting planes to guarantee contiguity.
+    6. CUT_preadd, CUT_all: Variations of CUT with preadded cutting plane.
 
 There is a running script `run.py`.
 
