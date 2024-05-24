@@ -43,3 +43,6 @@ With the `.pk` file, it is easy for user to visualize the district. For more fle
 `python HESS.py {adjfile} {populationfile} {positionfile} {tolerance} {districtNum}`
 
 without needing to only use the example in the `data/` folder. But users need to make sure that the format of data files satisfies the ones in the `data/` folder, which is trivial.
+
+## Additional note
+Detailed technical report and mathematical formulation is included in `techical_report.pdf`
